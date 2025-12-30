@@ -10,6 +10,9 @@ for(let i = 0; i < 16; i++)
         const col = document.createElement("div");
         col.classList.add("box");
         row.appendChild(col);
+        col.addEventListener("mouseenter", () => {
+            col.style.backgroundColor = "gray";
+        })
     }
     grid.appendChild(row);
 }
