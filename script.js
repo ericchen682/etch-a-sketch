@@ -13,7 +13,7 @@ for(let i = 0; i < 16; i++)
         col.classList.add("box");
         row.appendChild(col);
         col.addEventListener("mouseenter", () => {
-            col.style.backgroundColor = "gray";
+            col.style.backgroundColor = "rgb(" + Math.random()*256 + " " + Math.random()*256 + " " + Math.random()*256 + ")";
         })
     }
     grid.appendChild(row);
@@ -38,11 +38,10 @@ btn.addEventListener("click", () => {
         const col = document.createElement("div");
         col.classList.add("box");
         col.style.width = 32/width + "vw";
-        col.style.width /= width;
         col.style.height = col.style.width;
         row.appendChild(col);
         col.addEventListener("mouseenter", () => {
-            col.style.backgroundColor = "gray";
+            col.style.backgroundColor = "rgb(" + Math.random()*256 + " " + Math.random()*256 + " " + Math.random()*256 + ")";
         })
     }
     grid.appendChild(row);
